@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI5 Sandbox Application</title>
+    <script>
+      function handleComponentFailed(oEvent) {
+        console.error(oEvent.getParameter("reason"));
+        oEvent.preventDefault();
+      }
+    </script>
+    <script
+      src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+      id="sap-ui-bootstrap"
+      data-sap-ui-language="en"
+      data-sap-ui-theme="sap_fiori_3"
+      data-sap-ui-compatVersion="edge"
+      data-sap-ui-preload=""
+      data-sap-ui-async="true"
+      data-sap-ui-language="en"
+      data-sap-ui-oninit="module:sandbox/test/initMockServer"
+      data-sap-ui-resourceroots='{"sandbox":"./"}'
+    ></script>
+  </head>
+  <body class="sapUiBody" style="height: 100%;">
+    <div
+      data-sap-ui-component
+      data-name="sandbox"
+      data-id="container"
+      data-settings="{}"
+      data-component-failed="handleComponentFailed"
+    ></div>
+  </body>
+</html>

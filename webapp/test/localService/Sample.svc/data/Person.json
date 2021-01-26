@@ -1,0 +1,19 @@
+{
+  "value": [
+    {
+      "personId": "1",
+      "fullName": "John Doe",
+      "title": "Software Engineer"
+    },
+    {
+      "personId": "2",
+      "fullName": "Jane Doe",
+      "title": "Product Manager"
+    },
+    {
+      "personId": "3",
+      "fullName": "Eric Smith",
+      "title": "UX Designer"
+    }
+  ]
+}

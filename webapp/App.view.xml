@@ -1,0 +1,10 @@
+<mvc:View
+  controllerName="sandbox.App"
+  xmlns:l="sap.ui.layout"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <List headerText="{i18n>COMMON_People}" items="{/Person}">
+    <StandardListItem title="{fullName}" description="{title}" />
+  </List>
+  <Button id="okButton" text="{i18n>COMMON_Ok}" press="ok" />
+</mvc:View>

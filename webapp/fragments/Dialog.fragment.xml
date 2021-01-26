@@ -1,0 +1,8 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+  xmlns="sap.m">
+  <Dialog id="sampleDialog" title="{i18n>COMMON_ACTIONS}">
+    <endButton>
+      <Button id="dialogButton" text="{i18n>COMMON_Ok}" press=".close" />
+    </endButton>
+  </Dialog>
+</core:FragmentDefinition>

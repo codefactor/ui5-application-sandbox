@@ -1,0 +1,12 @@
+{
+  "name": "ui5-application",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "http-server ./webapp -c-1"
+  },
+  "dependencies": {
+    "http-server": "0.11.1"
+  },
+  "keywords": []
+}

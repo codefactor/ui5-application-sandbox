@@ -1,0 +1,55 @@
+{
+  "_version": "1.12.0",
+  "sap.app": {
+    "id": "sandbox",
+    "type": "application",
+    "dataSources": {
+      "default": {
+        "uri": "/odata/v4/Sample.svc/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "4.0"
+        }
+      }
+    }
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.75.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.f": {},
+        "sap.ui.unified": {}
+      }
+    },
+    "rootView": {
+      "viewName": "sandbox.App",
+      "type": "XML",
+      "async": true,
+      "id": "app"
+    },
+    "models": {
+      "": {
+        "dataSource": "default",
+        "settings": {
+          "synchronizationMode": "None",
+          "operationMode": "Server"
+        }
+      },
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "sandbox.i18n.messagebundle"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/styles.css"
+        }
+      ]
+    }
+  }
+}
